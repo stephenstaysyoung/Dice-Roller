@@ -4,34 +4,40 @@ var dieRoll4,
     dieRoll10,
     dieRoll12,
     dieRoll20,
-    dieRoll100;
+    dieRoll100,
+    d6;
+
+
+
 
 
 function getDieRoll4 () {
-  dieRoll4 = math.floor(math.random() * 4)+1;
+  dieRoll4 = Math.floor(Math.random() * 4)+1;
 }
 
+var d6 = document.getElementById('d6');
+d6.onclick = getDieRoll6 ();
 function getDieRoll6 () {
-  dieRoll6 = math.floor(math.random() * 6)+1;
-  document.write("<p>" + dieRoll6 + "</p>");
+  dieRoll6 = Math.floor(Math.random() * 6)+1;
 }
+document.write("<p>" + dieRoll6 + "</p>");
 
 function getDieRoll8 () {
-  dieRoll8 = math.floor(math.random() * 8)+1;
+  dieRoll8 = Math.floor(Math.random() * 8)+1;
 }
 
 function getDieRoll10 () {
-  dieRoll10 = math.floor(math.random() * 10)+1;
+  dieRoll10 = Math.floor(Math.random() * 10)+1;
 }
 
 function getDieRoll12 () {
-  dieRoll12 = math.floor(math.random() * 12)+1;
+  dieRoll12 = Math.floor(Math.random() * 12)+1;
 }
 
 function getDieRoll20 () {
-  dieRoll20 = math.floor(math.random() * 20)+1;
+  dieRoll20 = Math.floor(Math.random() * 20)+1;
 }
 
 function getDieRoll100 () {
-  dieRoll100 = math.floor(math.random() * 100)+1;
+  dieRoll100 = Math.floor(Math.random() * 100)+1;
 }
