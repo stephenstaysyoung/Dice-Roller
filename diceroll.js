@@ -8,19 +8,16 @@ var dieRoll4,
     d6;
 
 
-
-
-
 function getDieRoll4 () {
   dieRoll4 = Math.floor(Math.random() * 4)+1;
 }
 
 var d6 = document.getElementById('d6');
-d6.onclick = getDieRoll6 ();
+d6.onclick = function () {getDieRoll6()};
 function getDieRoll6 () {
   dieRoll6 = Math.floor(Math.random() * 6)+1;
+  document.write("<p>" + dieRoll6 + "</p>");
 }
-document.write("<p>" + dieRoll6 + "</p>");
 
 function getDieRoll8 () {
   dieRoll8 = Math.floor(Math.random() * 8)+1;
