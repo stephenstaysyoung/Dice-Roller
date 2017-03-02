@@ -16,7 +16,10 @@ var d6 = document.getElementById('d6');
 d6.onclick = function () {getDieRoll6()};
 function getDieRoll6 () {
   dieRoll6 = Math.floor(Math.random() * 6)+1;
-  document.write("<p>" + dieRoll6 + "</p>");
+  var p6 = document.createElement("p");
+  var d6Result = document.createTextNode(dieRoll6)
+  p6.appendChild(d6Result);
+    document.body.appendChild(p6);
 }
 
 function getDieRoll8 () {
